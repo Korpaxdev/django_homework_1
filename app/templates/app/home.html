@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+</head>
+<body>
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap:10px;">
+        <h1>Выберите раздел</h1>
+        {% for title, url in pages.items %}
+            <a href="{{ url }}" style="font-size: 20px">{{ title }}</a>
+        {% endfor %}</div>
+</body>
+</html>
